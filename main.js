@@ -3,7 +3,8 @@ import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 import { VolumeRenderShader1 } from 'three/addons/shaders/VolumeShader.js';
-import { VRButton } from 'three/examples/jsm/webxr/VRButton.js';
+import { VRButton } from 'https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/webxr/VRButton.js';
+
 import { FirstPersonControls } from 'three/addons/controls/FirstPersonControls.js';
 import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
 
