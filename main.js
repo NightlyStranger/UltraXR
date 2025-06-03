@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
 import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
@@ -61,6 +61,12 @@ import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
 			);
 			room.geometry.translate( 0, 3, 0 );
 			scene.add( room );
+
+			const cube = new THREE.Mesh(
+				new THREE.BoxGeometry(0.3, 0.3, 0.3), new THREE.MeshStandardMaterial({ color: 0x00ffcc })
+			);
+			cube.position.set(0, 1.6, -2); // In front of the headset at eye level
+			scene.add(cube);
 			
 			// Create controls
 			controls = new FirstPersonControls( camera, renderer.domElement );
