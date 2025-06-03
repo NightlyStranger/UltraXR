@@ -384,6 +384,7 @@ import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
 			window.addEventListener( 'resize', onWindowResize );
 
 			// set up ui
+			/*
 				guiScene = new THREE.Scene();
 				guiScene.background = new THREE.Color( 0x0 );
 
@@ -416,6 +417,7 @@ import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
 				guiCamera.top = bbox.max.y;
 				guiCamera.bottom = bbox.min.y;
 				guiCamera.updateProjectionMatrix();
+				*/
 
 		}
 
