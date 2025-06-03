@@ -1,0 +1,5 @@
+cd C:\Users\schoo\Desktop\bachelor\helloThree
+npx vite
+
+https://docs.nvidia.com/gameworks/content/developertools/desktop/timeout_detection_recovery.htm
+ZoUa-kvc3-Mt3A-RebE
