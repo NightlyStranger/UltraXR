@@ -62,8 +62,13 @@ import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
 			room.geometry.translate( 0, 3, 0 );
 			scene.add( room );
 
-			const light = new THREE.HemisphereLight(0xffffff, 0x222222, 2); // brighter ambient light
-			scene.add(light);
+			// Lights
+			const hemiLight = new THREE.HemisphereLight(0xffffff, 0x444444, 1.5);
+			scene.add(hemiLight);
+
+			const dirLight = new THREE.DirectionalLight(0xffffff, 1);
+			dirLight.position.set(1, 2, 1);
+			scene.add(dirLight);
 			const cube = new THREE.Mesh(
 				new THREE.BoxGeometry(3.3, 3.3, 3.3), new THREE.MeshStandardMaterial({ color: 0x00ff00 })
 			);
