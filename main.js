@@ -62,8 +62,10 @@ import { BoxLineGeometry } from 'three/addons/geometries/BoxLineGeometry.js';
 			room.geometry.translate( 0, 3, 0 );
 			scene.add( room );
 
+			const light = new THREE.HemisphereLight(0xffffff, 0x222222, 2); // brighter ambient light
+			scene.add(light);
 			const cube = new THREE.Mesh(
-				new THREE.BoxGeometry(3.3, 3.3, 3.3), new THREE.MeshStandardMaterial({ color: 0x00ffcc })
+				new THREE.BoxGeometry(3.3, 3.3, 3.3), new THREE.MeshStandardMaterial({ color: 0x00ff00 })
 			);
 			cube.position.set(0, 1.6, -2); // In front of the headset at eye level
 			scene.add(cube);
